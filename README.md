@@ -1,6 +1,5 @@
-<h1 align="center">
-Welcome to Term-Logger👋
-</h1>
+<img alt="term-logger" src="https://cdn.discordapp.com/attachments/1050740855805313064/1124697876501631078/Image2.png" width="546" style="max-width: 100%">
+
 <h4 align="center">
 Custom formatted <b>Console Logs</b> and <b>Anti-Crash</b> system for your Discord bot!
 </h4>
