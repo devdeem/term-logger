@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="term-logger" src="https://cdn.discordapp.com/attachments/1050740855805313064/1124697876501631078/Image2.png" width="546" style="max-width: 100%;">
+<img alt="term-logger" src="https://cdn.discordapp.com/attachments/1050740855805313064/1125727738410573894/Logo.png" width="546" style="max-width: 100%;">
 </div>
 
 <h4 align="center">
@@ -26,7 +26,7 @@ To install this package simply run <b>npm install term-logger@latest</b>.
 Usage
 </h1>
 
-**Usage only for console logs**
+#### Usage only for console logs
 
 ```javascript
 const { Logger } = require("term-logger");
@@ -49,7 +49,7 @@ Logger.cluster(`Launched Cluster 3`);
 Logger.lang("Successfully loaded en-US.js language");
 ```
 
-**Usage only for Anti-Crash**
+#### Usage only for Anti-Crash
 
 ```javascript
 const { Client } = require("discord.js");
@@ -68,7 +68,7 @@ const noCrash = new TermLogger(client, {
 client.login("YOUR_BOT_TOKEN");
 ```
 
-**Usage for both**
+#### Usage for both
 
 ```javascript
 const { Client } = require("discord.js");
