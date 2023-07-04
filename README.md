@@ -13,7 +13,12 @@ Custom formatted <b>Console Logs</b> and <b>Anti-Crash</b> system for your Disco
 <img alt="licence" src="https://img.shields.io/npm/l/term-logger">
 </h4>
 
-> The documentation is already in the works and will be out soon!
+<h1 align="center">
+Documentation
+</h1>
+<h4 align="center">
+Here is the full documentation for <a href="https://term-logger.deem.lol/">term-logger</a>.
+</h4>
 
 <h1 align="center">
 Install
