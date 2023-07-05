@@ -65,12 +65,12 @@ class TermLogger extends EventEmitter {
         throw new ReferenceError(`Discord Client is invalid!`);
       }
 
-      if (options.enableAntiCrash === false) {
+      if (options?.enableAntiCrash === false) {
         if (options?.systemMessages === true) {
           console.log(
             `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${
               `Option enableAntiCrash is ${
-                options.enableAntiCrash ? "enabled" : "disabled"
+                options?.enableAntiCrash ? "enabled" : "disabled"
               }! Package will not prevent bot termination`.grey
             }`
           );
@@ -80,7 +80,7 @@ class TermLogger extends EventEmitter {
             `  ${`TERM-LOGGER SETTINGS`.red} ${`:`.white}\n  ${`Option`.grey} ${
               `enableAntiCrash`.white
             } ${
-              `is ${options.enableAntiCrash ? "enabled" : "disabled"}`.grey
+              `is ${options?.enableAntiCrash ? "enabled" : "disabled"}`.grey
             }\n  ${`Option`.grey} ${`systemMessages`.white} ${
               `is enabled`.grey
             }\n\n  ${`Package version:`.grey} ${`${packageVersion}`.white}\n  ${
@@ -89,7 +89,7 @@ class TermLogger extends EventEmitter {
           );
           console.log(`  ${`------------------------------------`.rainbow}`);
         }
-      } else if (options.enableAntiCrash === true) {
+      } else if (options?.enableAntiCrash === true) {
         this.CacheErrors();
       } else {
         return console.log(
@@ -118,7 +118,7 @@ class TermLogger extends EventEmitter {
           `  ${`TERM-LOGGER SETTINGS`.red} ${`:`.white}\n  ${`Option`.grey} ${
             `enableAntiCrash`.white
           } ${
-            `is ${this.options.enableAntiCrash ? "enabled" : "disabled"}`.grey
+            `is ${this.options?.enableAntiCrash ? "enabled" : "disabled"}`.grey
           }\n  ${`Option`.grey} ${`systemMessages`.white} ${
             `is enabled`.grey
           }\n\n  ${`Package version:`.grey} ${`${packageVersion}`.white}\n  ${
