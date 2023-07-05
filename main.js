@@ -158,17 +158,6 @@ class TermLogger extends EventEmitter {
       console.log(e);
       console.log(o);
     });
-
-    process.on("multipleResolves", (type, p, r) => {
-      console.log(
-        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${
-          `MULTIPLE RESOLVES`.white
-        }`
-      );
-      console.log(type);
-      console.log(p);
-      console.log(r);
-    });
   }
 }
 
