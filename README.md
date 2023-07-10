@@ -17,7 +17,7 @@ Custom formatted <b>Console Logs</b> and <b>Anti-Crash</b> system for your Disco
 Documentation
 </h1>
 <h4 align="center">
-Here is the full documentation for <a href="https://term-logger.deem.lol/">term-logger</a>.
+Here is the full documentation for <a href="https://deem-0001.github.io/">term-logger</a>.
 </h4>
 
 <h1 align="center">
