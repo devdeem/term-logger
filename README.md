@@ -14,13 +14,6 @@ Custom formatted <b>Console Logs</b> and <b>Anti-Crash</b> system for your Disco
 </h4>
 
 <h1 align="center">
-Documentation
-</h1>
-<h4 align="center">
-Here is the full documentation for <a href="https://deem-0001.github.io/">term-logger</a>.
-</h4>
-
-<h1 align="center">
 Install
 </h1>
 <h4 align="center">
@@ -92,6 +85,95 @@ Logger.ready(`Logged in as ${client.user.username}`);
 
 client.login("YOUR_BOT_TOKEN");
 ```
+
+<h1 align="center">
+Documentation
+</h1>
+<h2>Package Options</h2>
+<h3>Constructor</h3>
+
+```javascript
+new TermLogger(client);
+```
+
+<table>
+ <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>enableAntiCrash</td>
+            <td>Boolean</td>
+            <td>Enable or disable AntiCrash system</td>
+          </tr>
+          <tr>
+            <td>systemMessages</td>
+            <td>Boolean</td>
+            <td>Enable or disable system messages</td>
+          </tr>
+</table>
+
+<h3>Logger Options</h3>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Logger.error("message")</td>
+            <td>Logs an error message</td>
+          </tr>
+          <tr>
+            <td>Logger.debug("message")</td>
+            <td>Logs a debug message</td>
+          </tr>
+          <tr>
+            <td>Logger.info("message")</td>
+            <td>Logs an information message</td>
+          </tr>
+          <tr>
+            <td>Logger.warn("message")</td>
+            <td>Logs a warning message</td>
+          </tr>
+          <tr>
+            <td>Logger.critical("message")</td>
+            <td>Logs a critical message</td>
+          </tr>
+          <tr>
+            <td>Logger.ready("message")</td>
+            <td>Logs a message indicating that the app is ready</td>
+          </tr>
+          <tr>
+            <td>Logger.command("message")</td>
+            <td>Logs a message that the command was executed</td>
+          </tr>
+          <tr>
+            <td>Logger.event("message")</td>
+            <td>Logs a message that the event has been loaded</td>
+          </tr>
+          <tr>
+            <td>Logger.heartbeat("message")</td>
+            <td>Logs a heartbeat or activity message</td>
+          </tr>
+          <tr>
+            <td>Logger.database("message")</td>
+            <td>Logs a message related to database operations</td>
+          </tr>
+          <tr>
+            <td>Logger.shard("message")</td>
+            <td>Logs a message related to shards</td>
+          </tr>
+          <tr>
+            <td>Logger.cluster("message")</td>
+            <td>Logs a message related to clusters</td>
+          </tr>
+          <tr>
+            <td>Logger.lang("message")</td>
+            <td>Logs a message related to language</td>
+          </tr>
+        </table>
+        <p><b>Message must always be either a STRING or DATA</b></p>
 
 <h1 align="center">
 Do you have any issues?
