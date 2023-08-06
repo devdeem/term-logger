@@ -1,6 +1,6 @@
 ![banner](https://cdn.discordapp.com/attachments/1050740855805313064/1125727738410573894/Logo.png)
 
-# Term Logger
+# TERM LOGGER
 
 Custom formatted **Console Logs** and **Anti-Crash** system for your Discord bot!
 
@@ -29,21 +29,20 @@ Usage only for console logs
 const { Logger } = require("term-logger");
 
 //Defaul Logs
-Logger.error(`You have error here dumb ass`);
-Logger.debug(`Yoooo, my balls itch`);
-Logger.info(`The world's largest penis measures 48cm`);
-Logger.warn(`You should take a break noob`);
-Logger.critical(`AAAAAAAAAAAAAAAAAAAAAAAA`);
+Logger.error(`Example log text!`);
+Logger.debug(`Example log text!`);
+Logger.info(`Example log text!`);
+Logger.warn(`Example log text!`);
+Logger.critical(`Example log text!`);
 
 //Discord Logs
-Logger.ready(`Logged in as EpicBalls#6969`);
-Logger.command(`Successfully registered gay.js command`);
-Logger.event(`Successfully registered ready.js event`);
-Logger.heatbeat(`Epic Discord gateway logs`);
-Logger.database(`Successfully connected to the database`);
-Logger.shard(`Shard is ready | Shard ID: 1`);
-Logger.cluster(`Launched Cluster 3`);
-Logger.lang("Successfully loaded en-US.js language");
+Logger.ready(`Example log text!`);
+Logger.command(`Example log text!`);
+Logger.event(`Example log text!`);
+Logger.database(`Example log text!`);
+Logger.shard(`Example log text!`);
+Logger.cluster(`Example log text!`);
+Logger.lang("Example log text!");
 ```
 
 Usage only for Anti-Crash
@@ -152,10 +151,6 @@ new TermLogger(client);
             <td>Logs a message that the event has been loaded</td>
           </tr>
           <tr>
-            <td>Logger.heartbeat("message")</td>
-            <td>Logs a heartbeat or activity message</td>
-          </tr>
-          <tr>
             <td>Logger.database("message")</td>
             <td>Logs a message related to database operations</td>
           </tr>
@@ -176,7 +171,7 @@ new TermLogger(client);
 
 # Do you have any issues?
 
-If you have any issues don't hesitate to report it via [Github Issues](https://github.com/DEEM-0001/term-logger/issues).
+If you have any issues don't hesitate to report it via [Github Issues](https://github.com/devdeem/term-logger/issues).
 
 # Support
 
@@ -185,6 +180,6 @@ If you need help or assistance please either ask in my [Discord Server](https://
 # Sponsor Us
 
 Do you use **Term-Logger** and are you satisfied?
-You can support us with a one-time donation to help us improve our work: [Donate here](https://github.com/sponsors/DEEM-0001).
+You can support us with a one-time donation to help us improve our work: [Donate here](https://github.com/sponsors/devdeem).
 
 > Developed by @deemdev with ❤️

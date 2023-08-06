@@ -22,176 +22,131 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-const error = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth() + 1;
+const year = date.getFullYear();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
 
+const error = (msg) => {
   return console.log(
-    `\x1b[1;31m    ERROR     | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${
+    `\x1b[1;91m| ERROR    | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
       seconds < 10 ? "0" + seconds : seconds
-    }\x1b[1;31m | \x1b[1;31m${data}\x1b[0m`
+    }\x1b[1;91m ${msg}\x1b[0m`
   );
 };
 
-const warn = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
+const warn = (msg) => {
   return console.log(
-    `\x1b[2;33m    WARN      | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[2;33m | ${data}\x1b[0m`
-  );
-};
-
-const debug = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[0;35m    DEBUG     | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[0;35m | ${data}\x1b[0m`
-  );
-};
-
-const info = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[1;37m    INFO      | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[1;37m | ${data}\x1b[0m`
-  );
-};
-
-const ready = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[0;34m    READY     | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[0;34m | ${data}\x1b[0m`
-  );
-};
-
-const command = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[1;34m    COMMAND   | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[1;34m | ${data}\x1b[0m`
-  );
-};
-
-const event = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[1;33m    EVENT     | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[1;33m | ${data}\x1b[0m`
-  );
-};
-
-const heartbeat = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[1;30m    HEARTBEAT | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[1;30m | ${data}\x1b[0m`
-  );
-};
-
-const database = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[1;36m    DATABASE  | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[1;36m | ${data}\x1b[0m`
-  );
-};
-
-const shard = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[0;32m    SHARD     | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[0;32m | ${data}\x1b[0m`
-  );
-};
-
-const cluster = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[2;33m    CLUSTER   | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[2;33m | ${data}\x1b[0m`
-  );
-};
-
-const lang = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[2;35m    LANGUAGE  | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${seconds < 10 ? "0" + seconds : seconds}\x1b[2;35m | ${data}\x1b[0m`
-  );
-};
-
-const critical = (data) => {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  return console.log(
-    `\x1b[1;31m    CRITICAL  | \x1b[0;37m${hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }:${
+    `\x1b[1;33m| WARN     | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
       seconds < 10 ? "0" + seconds : seconds
-    }\x1b[1;31m | \x1b[1;31m${data}\x1b[0m`
+    }\x1b[1;33m ${msg}\x1b[0m`
+  );
+};
+
+const debug = (msg) => {
+  return console.log(
+    `\x1b[1;35m| DEBUG    | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;35m ${msg}\x1b[0m`
+  );
+};
+
+const info = (msg) => {
+  return console.log(
+    `\x1b[1;37m| INFO     | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;37m ${msg}\x1b[0m`
+  );
+};
+
+const ready = (msg) => {
+  return console.log(
+    `\x1b[1;34m| READY    | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;34m ${msg}\x1b[0m`
+  );
+};
+
+const command = (msg) => {
+  return console.log(
+    `\x1b[1;36m| COMMAND  | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;36m ${msg}\x1b[0m`
+  );
+};
+
+const event = (msg) => {
+  return console.log(
+    `\x1b[1;93m| EVENT    | \x1b[90m${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;93m ${msg}\x1b[0m`
+  );
+};
+
+const database = (msg) => {
+  return console.log(
+    `\x1b[1;36m| DATABASE |\x1b[90m ${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;36m ${msg}\x1b[0m`
+  );
+};
+
+const shard = (msg) => {
+  return console.log(
+    `\x1b[1;32m| SHARD    |\x1b[90m ${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;32m ${msg}\x1b[0m`
+  );
+};
+
+const cluster = (msg) => {
+  return console.log(
+    `\x1b[1;33m| CLUSTER  |\x1b[90m ${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;33m ${msg}\x1b[0m`
+  );
+};
+
+const lang = (msg) => {
+  return console.log(
+    `\x1b[1;95m| LANGUAGE |\x1b[90m ${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;95m ${msg}\x1b[0m`
+  );
+};
+
+const critical = (msg) => {
+  return console.log(
+    `\x1b[1;31m| CRITICAL |\x1b[90m ${year}-${month < 10 ? "0" + month : month}-${
+      day < 10 ? "0" + day : day
+    } ${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "O" + minutes : minutes}:${
+      seconds < 10 ? "0" + seconds : seconds
+    }\x1b[1;31m ${msg}\x1b[0m`
   );
 };
 
@@ -203,7 +158,6 @@ module.exports = {
   ready,
   command,
   event,
-  heartbeat,
   database,
   shard,
   cluster,

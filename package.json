@@ -1,6 +1,6 @@
 {
   "name": "term-logger",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Custom formatted Console Logs and Anti-Crash system for your Discord bot!",
   "main": "main.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DEEM-0001/term-logger"
+    "url": "https://github.com/devdeem/term-logger"
   },
   "bugs": {
-    "url": "https://github.com/DEEM-0001/term-logger/issues"
+    "url": "https://github.com/devdeem/term-logger/issues"
   },
-  "homepage": "https://github.com/DEEM-0001/term-logger/blob/main/README.md",
+  "homepage": "https://github.com/devdeem/term-logger/blob/main/README.md",
   "keywords": [
     "consolelog",
     "consolelogger",

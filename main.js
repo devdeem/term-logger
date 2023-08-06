@@ -35,7 +35,6 @@ const {
   ready,
   command,
   event,
-  heartbeat,
   database,
   shard,
   cluster,
@@ -55,9 +54,7 @@ class TermLogger extends EventEmitter {
     client.on(Events.ClientReady, async () => {
       if (options?.systemMessages === true) {
         console.log(
-          `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${
-            `Package loading is in progress...`.grey
-          }`
+          `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`Package loading is in progress...`.grey}`
         );
       }
 
@@ -79,13 +76,11 @@ class TermLogger extends EventEmitter {
           console.log(
             `  ${`TERM-LOGGER SETTINGS`.red} ${`:`.white}\n  ${`Option`.grey} ${
               `enableAntiCrash`.white
-            } ${
-              `is ${options?.enableAntiCrash ? "enabled" : "disabled"}`.grey
-            }\n  ${`Option`.grey} ${`systemMessages`.white} ${
-              `is enabled`.grey
-            }\n\n  ${`Package version:`.grey} ${`${packageVersion}`.white}\n  ${
-              `Developer:`.grey
-            } ${`@deemdev`.white} ${`on Discord`.grey}`
+            } ${`is ${options?.enableAntiCrash ? "enabled" : "disabled"}`.grey}\n  ${
+              `Option`.grey
+            } ${`systemMessages`.white} ${`is enabled`.grey}\n\n  ${`Package version:`.grey} ${
+              `${packageVersion}`.white
+            }\n  ${`Developer:`.grey} ${`@deemdev`.white} ${`on Discord`.grey}`
           );
           console.log(`  ${`------------------------------------`.rainbow}`);
         }
@@ -94,8 +89,7 @@ class TermLogger extends EventEmitter {
       } else {
         return console.log(
           `  ${`TERM-LOGGER ERROR:`.red} ${
-            `Option enableAntiCrash is not valid! You can use only false/true (Boolean)`
-              .white
+            `Option enableAntiCrash is not valid! You can use only false/true (Boolean)`.white
           }`
         );
       }
@@ -117,13 +111,11 @@ class TermLogger extends EventEmitter {
         console.log(
           `  ${`TERM-LOGGER SETTINGS`.red} ${`:`.white}\n  ${`Option`.grey} ${
             `enableAntiCrash`.white
-          } ${
-            `is ${this.options?.enableAntiCrash ? "enabled" : "disabled"}`.grey
-          }\n  ${`Option`.grey} ${`systemMessages`.white} ${
-            `is enabled`.grey
-          }\n\n  ${`Package version:`.grey} ${`${packageVersion}`.white}\n  ${
-            `Developer:`.grey
-          } ${`@deemdev`.white} ${`on Discord`.grey}`
+          } ${`is ${this.options?.enableAntiCrash ? "enabled" : "disabled"}`.grey}\n  ${
+            `Option`.grey
+          } ${`systemMessages`.white} ${`is enabled`.grey}\n\n  ${`Package version:`.grey} ${
+            `${packageVersion}`.white
+          }\n  ${`Developer:`.grey} ${`@deemdev`.white} ${`on Discord`.grey}`
         );
         console.log(`  ${`------------------------------------`.rainbow}`);
       }
@@ -131,9 +123,7 @@ class TermLogger extends EventEmitter {
 
     process.on("unhandledRejection", (r, p) => {
       console.log(
-        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${
-          `UNHANDLED REJECTION`.white
-        }`
+        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${`UNHANDLED REJECTION`.white}`
       );
       console.log(r);
       console.log(p);
@@ -141,9 +131,7 @@ class TermLogger extends EventEmitter {
 
     process.on("uncaughtException", (e, o) => {
       console.log(
-        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${
-          `UNCAUGHT EXCEPTION`.white
-        }`
+        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${`UNCAUGHT EXCEPTION`.white}`
       );
       console.log(e);
       console.log(o);
@@ -151,9 +139,7 @@ class TermLogger extends EventEmitter {
 
     process.on("uncaughtExceptionMonitor", (e, o) => {
       console.log(
-        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${
-          `UNCAUGHT EXCEPTION MONITOR`.white
-        }`
+        `  ${`TERM-LOGGER`.grey} ${`|`.grey} ${`ERROR:`.red} ${`UNCAUGHT EXCEPTION MONITOR`.white}`
       );
       console.log(e);
       console.log(o);
@@ -171,7 +157,6 @@ module.exports = {
     ready,
     command,
     event,
-    heartbeat,
     database,
     shard,
     cluster,
