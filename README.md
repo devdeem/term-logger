@@ -6,7 +6,7 @@ Custom formatted **Console Logs** and **Anti-Crash** system for your Discord bot
 
 ![version](https://img.shields.io/npm/v/term-logger)
 ![collaborators](https://img.shields.io/npm/collaborators/term-logger)
-![downloads](https://img.shields.io/npm/dw/term-logger)
+![downloads](https://img.shields.io/npm/dt/term-logger)
 ![licence](https://img.shields.io/npm/l/term-logger)
 
 ## Installation
