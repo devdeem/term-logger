@@ -1,6 +1,6 @@
 {
   "name": "term-logger",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Custom formatted Console Logs and Anti-Crash system for your Discord bot!",
   "main": "main.js",
   "scripts": {
