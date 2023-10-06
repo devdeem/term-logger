@@ -23,7 +23,7 @@ pnpm add term-logger@latest
 
 ## Usage
 
-Usage only for console logs
+Usage only for Console Logs
 
 ```javascript
 const { Logger } = require("term-logger");
@@ -45,6 +45,21 @@ Logger.cluster(`Example log text!`);
 Logger.lang("Example log text!");
 ```
 
+Usage for Colors
+
+```javascript
+const { Colors } = require("term-logger");
+
+Colors.grey("message");
+Colors.red("message");
+Colors.green("message");
+Colors.yellow("message");
+Colors.blue("message");
+Colors.purple("message");
+Colors.cyan("message");
+Colors.white("message");
+```
+
 Usage only for Anti-Crash
 
 ```javascript
@@ -60,26 +75,6 @@ const noCrash = new TermLogger(client, {
   enableAntiCrash: true,
   systemMessages: true,
 });
-
-client.login("YOUR_BOT_TOKEN");
-```
-
-Usage for both
-
-```javascript
-const { Client } = require("discord.js");
-const { TermLogger, Logger } = require("term-logger");
-
-const client = new Client({
-  intents: [...],
-});
-
-const noCrash = new TermLogger(client, {
-  enableAntiCrash: true,
-  systemMessages: true,
-});
-
-Logger.ready(`Logged in as ${client.user.username}`);
 
 client.login("YOUR_BOT_TOKEN");
 ```
@@ -169,6 +164,37 @@ new TermLogger(client);
         </table>
         <p><b>Message must always be either a STRING or DATA!</b></p>
 
+<h3>Colors Options</h3>
+        <table>
+          <tr>
+            <th>Colors</th>
+          </tr>
+          <tr>
+            <td>Grey</td>
+          </tr>
+          <tr>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Yellow</td>
+          </tr>
+          <tr>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <td>Purple</td>
+          </tr>
+          <tr>
+            <td>Cyan</td>
+          </tr>
+          <tr>
+            <td>White</td>
+          </tr>
+        </table>
+
 # Do you have any issues?
 
 If you have any issues don't hesitate to report it via [Github Issues](https://github.com/devdeem/term-logger/issues).
@@ -180,6 +206,8 @@ If you need help or assistance please either ask in my [Discord Server](https://
 # Sponsor Us
 
 Do you use **Term-Logger** and are you satisfied?
-You can support us with a one-time donation to help us improve our work: [Donate here](https://github.com/sponsors/devdeem).
+You can support us with a one-time donation to help us improve our work: [Donate here](https://ko-fi.com/deemdev).
+
+[![Discord Banner](https://api.weblutions.com/discord/invite/UdKSrxBXyd/)](https://discord.gg/UdKSrxBXyd)
 
 > Developed by @deemdev with ❤️

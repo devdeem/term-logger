@@ -41,6 +41,7 @@ const {
   lang,
   critical,
 } = require("./logger/logs");
+const { grey, red, green, yellow, blue, purple, cyan, white } = require("./logger/colors");
 
 class TermLogger extends EventEmitter {
   TermLogger_Emit = this;
@@ -162,5 +163,15 @@ module.exports = {
     cluster,
     lang,
     critical,
+  },
+  Colors: {
+    grey,
+    red,
+    green,
+    yellow,
+    blue,
+    purple,
+    cyan,
+    white,
   },
 };
