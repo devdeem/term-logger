@@ -1,0 +1,51 @@
+{
+  "source": {
+    "include": ["main.js", "package.json", "docREADME.md"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "encoding": "utf8",
+    "readme": "./docREADME.md",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true,
+    "template": "./node_modules/clean-jsdoc-theme",
+    "theme_opts": {
+      "meta": [
+        {
+          "name": "author",
+          "content": "DEEM"
+        },
+        {
+          "name": "description",
+          "content": "Custom formatted Console Logs and Anti-Crash system for your Discord bot!"
+        }
+      ],
+      "menu": [
+        {
+          "title": "Github",
+          "link": "https://github.com/devdeem/term-logger",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord Server",
+          "link": "https://support.roblybot.xyz",
+          "target": "_blank"
+        },
+        {
+          "title": "Package",
+          "link": "https://www.npmjs.com/package/term-logger",
+          "target": "_blank"
+        }
+      ],
+      "homepageTitle": "Term Logger",
+      "default_theme": "dark"
+    }
+  },
+  "markdown": {
+    "hardwrap": false,
+    "idInHeadings": true
+  }
+}

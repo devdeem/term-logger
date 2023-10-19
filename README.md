@@ -14,11 +14,7 @@ Custom formatted **Console Logs** and **Anti-Crash** system for your Discord bot
 To install this package simply run:
 
 ```bash
-npm install term-logger@latest
-or
-yarn add term-logger@latest
-or
-pnpm add term-logger@latest
+npm i term-logger@latest
 ```
 
 ## Usage
