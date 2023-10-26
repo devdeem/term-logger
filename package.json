@@ -1,11 +1,8 @@
 {
   "name": "term-logger",
-  "version": "1.2.1",
-  "description": "Custom formatted Console Logs and Anti-Crash system for your Discord bot!",
+  "version": "1.2.2",
+  "description": "A simple node logger with custom formatted console logs!",
   "main": "main.js",
-  "scripts": {
-    "generate-docs": "jsdoc --configure jsdoc.json --verbose"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/devdeem/term-logger"
@@ -13,35 +10,22 @@
   "bugs": {
     "url": "https://github.com/devdeem/term-logger/issues"
   },
-  "homepage": "https://devdeem.github.io/term-logger",
+  "homepage": "https://discord.gg/9ruT3GTRG8",
   "keywords": [
-    "consolelog",
-    "consolelogger",
-    "console-log",
-    "console-logger",
-    "terminal-log",
-    "terminal-logger",
-    "term-log",
+    "console log",
+    "console logger",
+    "terminal log",
+    "terminal logger",
     "term-logger",
     "discord-logger",
     "discord-log",
     "discord-console",
     "discord-console-log",
-    "colors",
-    "discord anticrash",
-    "anticrash",
-    "code watcher"
+    "colors"
   ],
   "author": "deemdev",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.4.0",
-    "discord.js": "^14.13.0",
-    "events": "^3.3.0",
-    "jsdoc": "^4.0.2",
-    "term-logger": "^1.2.0"
-  },
-  "devDependencies": {
-    "clean-jsdoc-theme": "^4.2.14"
+    "colors": "^1.4.0"
   }
 }

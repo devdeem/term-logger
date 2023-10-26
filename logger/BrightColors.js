@@ -22,45 +22,43 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-const grey = (msg) => {
-  return console.log(`\x1b[0;30m${msg}\x1b[0m`);
+// COLORS PACKAGE
+const c = require('colors');
+
+const brightRed = (data) => {
+  return console.log(`${`${data}`.brightRed}`);
 };
 
-const red = (msg) => {
-  return console.log(`\x1b[0;31m${msg}\x1b[0m`);
+const brightGreen = (data) => {
+  return console.log(`${`${data}`.brightGreen}`);
 };
 
-const green = (msg) => {
-  return console.log(`\x1b[0;32m${msg}\x1b[0m`);
+const brightYellow = (data) => {
+  return console.log(`${`${data}`.brightYellow}`);
 };
 
-const yellow = (msg) => {
-  return console.log(`\x1b[0;93m${msg}\x1b[0m`);
+const brightBlue = (data) => {
+  return console.log(`${`${data}`.brightBlue}`);
 };
 
-const blue = (msg) => {
-  return console.log(`\x1b[0;34m${msg}\x1b[0m`);
+const brightPurple = (data) => {
+  return console.log(`${`${data}`.brightMagenta}`);
 };
 
-const purple = (msg) => {
-  return console.log(`\x1b[0;35m${msg}\x1b[0m`);
+const brightCyan = (data) => {
+  return console.log(`${`${data}`.brightCyan}`);
 };
 
-const cyan = (msg) => {
-  return console.log(`\x1b[0;36m${msg}\x1b[0m`);
-};
-
-const white = (msg) => {
-  return console.log(`\x1b[0;37m${msg}\x1b[0m`);
+const brightWhite = (data) => {
+  return console.log(`${`${data}`.brightWhite}`);
 };
 
 module.exports = {
-  grey,
-  red,
-  green,
-  yellow,
-  blue,
-  purple,
-  cyan,
-  white,
+  brightRed,
+  brightGreen,
+  brightYellow,
+  brightBlue,
+  brightPurple,
+  brightCyan,
+  brightWhite,
 };
