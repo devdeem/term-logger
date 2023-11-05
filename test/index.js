@@ -1,4 +1,4 @@
-const { Logger, TextColors, TextStyles, BrightColors, BgColors } = require('../main');
+const { Logger, TextColors, TextStyles, BrightColors, BgColors } = require('../main'); // require('term-logger');
 
 console.log('---------------------- LOGGER ----------------------');
 Logger.error('ERROR event test');
