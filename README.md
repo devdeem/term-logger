@@ -152,6 +152,16 @@ TextStyles.underline('...');
 // and 7 more text styles...
 ```
 
+<h2>Projects that use term-logger</h2>
+<p>Some notable projects that use <b>term-logger</b> include:</p>
+
+- [Robly](https://roblybot.xyz)
+- [Nero Bot](https://nerobot.eu)
+- [Note Bot](https://github.com/lassejlv/note-bot)
+- [Movie Swiper](https://www.movieswiper.xyz/)
+
+Do you use a term-logger? Join our [Discord Server](https://discord.com/invite/UdKSrxBXyd) and let us know!
+
 <h2>Do you have any issues?</h2>
 <p>
   If you have any issues don't hesitate to report it via
