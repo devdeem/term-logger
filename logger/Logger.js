@@ -1,5 +1,5 @@
 // COLORS PACKAGE
-const c = require('colors');
+const chalk = require('chalk');
 
 const date = new Date();
 const hours = date.getHours();
@@ -8,191 +8,191 @@ const seconds = date.getSeconds();
 
 const error = (data) => {
   return console.log(
-    `${`>`.grey}  ${`ERROR`.underline.red}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.red(`ERROR`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const critical = (data) => {
   return console.log(
-    `${`>`.grey}  ${`CRITICAL`.underline.red} ${
+    `${chalk.grey(`>`)}  ${chalk.underline.red(`CRITICAL`)} ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const success = (data) => {
   return console.log(
-    `${`>`.grey}  ${`SUCCESS`.underline.green}  ${
+    `${chalk.grey(`>`)}  ${chalk.underline.green(`SUCCESS`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const warn = (data) => {
   return console.log(
-    `${`>`.grey}  ${`WARNING`.underline.yellow}  ${
+    `${chalk.grey(`>`)}  ${chalk.underline.yellow(`WARNING`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const await = (data) => {
   return console.log(
-    `${`>`.grey}  ${`WAITING`.underline.cyan}  ${
+    `${chalk.grey(`>`)}  ${chalk.underline.cyan(`WAITING`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const complete = (data) => {
   return console.log(
-    `${`>`.grey}  ${`COMPLETE`.underline.green} ${
+    `${chalk.grey(`>`)}  ${chalk.underline.green(`COMPLETE`)} ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const debug = (data) => {
   return console.log(
-    `${`>`.grey}  ${`DEBUG`.underline.magenta}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.magenta(`DEBUG`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const fatal = (data) => {
   return console.log(
-    `${`>`.grey}  ${`FATAL`.underline.red}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.red(`FATAL`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const info = (data) => {
   return console.log(
-    `${`>`.grey}  ${`INFO`.underline.white}     ${
+    `${chalk.grey(`>`)}  ${chalk.underline.white(`INFO`)}     ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const note = (data) => {
   return console.log(
-    `${`>`.grey}  ${`NOTE`.underline.grey}     ${
+    `${chalk.grey(`>`)}  ${chalk.underline.grey(`NOTE`)}     ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const pending = (data) => {
   return console.log(
-    `${`>`.grey}  ${`PENDING`.underline.magenta}  ${
+    `${chalk.grey(`>`)}  ${chalk.underline.magenta(`PENDING`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const start = (data) => {
   return console.log(
-    `${`>`.grey}  ${`START`.underline.green}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.green(`START`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const watch = (data) => {
   return console.log(
-    `${`>`.grey}  ${`WATCHING`.underline.yellow} ${
+    `${chalk.grey(`>`)}  ${chalk.underline.yellow(`WATCHING`)} ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const ready = (data) => {
   return console.log(
-    `${`>`.grey}  ${`READY`.underline.blue}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.blue(`READY`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const command = (data) => {
   return console.log(
-    `${`>`.grey}  ${`COMMAND`.underline.cyan}  ${
+    `${chalk.grey(`>`)}  ${chalk.underline.cyan(`COMMAND`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const event = (data) => {
   return console.log(
-    `${`>`.grey}  ${`EVENT`.underline.yellow}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.yellow(`EVENT`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const database = (data) => {
   return console.log(
-    `${`>`.grey}  ${`DATABASE`.underline.grey} ${
+    `${chalk.grey(`>`)}  ${chalk.underline.grey(`DATABASE`)} ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const shard = (data) => {
   return console.log(
-    `${`>`.grey}  ${`SHARD`.underline.green}    ${
+    `${chalk.grey(`>`)}  ${chalk.underline.green(`SHARD`)}    ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 
 const cluster = (data) => {
   return console.log(
-    `${`>`.grey}  ${`CLUSTER`.underline.blue}  ${
+    `${chalk.grey(`>`)}  ${chalk.underline.blue(`CLUSTER`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
         seconds < 10 ? '0' + seconds : seconds
-      }]`.gray
-    }   ${`${data}`.white}`
+      }]`
+    )}   ${chalk.white(`${data}`)}`
   );
 };
 

@@ -1,50 +1,45 @@
 // COLORS PACKAGE
-const c = require('colors');
+const chalk = require('chalk');
 
 const bold = (data) => {
-  return console.log(`${`${data}`.bold}`);
+  return console.log(chalk.bold(data));
+};
+
+const dim = (data) => {
+  return console.log(chalk.dim(data));
 };
 
 const italic = (data) => {
-  return console.log(`${`${data}`.italic}`);
+  return console.log(chalk.italic(data));
 };
 
 const underline = (data) => {
-  return console.log(`${`${data}`.underline}`);
+  return console.log(chalk.underline(data));
 };
 
 const inverse = (data) => {
-  return console.log(`${`${data}`.inverse}`);
+  return console.log(chalk.inverse(data));
+};
+
+const hidden = (data) => {
+  return console.log(chalk.hidden(data));
 };
 
 const strikethrough = (data) => {
-  return console.log(`${`${data}`.strikethrough}`);
+  return console.log(chalk.strikethrough(data));
 };
 
-const rainbow = (data) => {
-  return console.log(`${`${data}`.rainbow}`);
-};
-
-const america = (data) => {
-  return console.log(`${`${data}`.america}`);
-};
-
-const trap = (data) => {
-  return console.log(`${`${data}`.trap}`);
-};
-
-const random = (data) => {
-  return console.log(`${`${data}`.random}`);
+const visible = (data) => {
+  return console.log(chalk.visible(data));
 };
 
 module.exports = {
   bold,
+  dim,
   italic,
   underline,
   inverse,
+  hidden,
   strikethrough,
-  rainbow,
-  america,
-  trap,
-  random,
+  visible,
 };

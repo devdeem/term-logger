@@ -1,9 +1,8 @@
 {
   "name": "term-logger",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A simple node logger with custom formatted console logs!",
   "main": "main.js",
-  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/devdeem/term-logger"
@@ -11,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/devdeem/term-logger/issues"
   },
-  "homepage": "https://discord.gg/9ruT3GTRG8",
+  "homepage": "https://support.roblybot.xyz",
   "keywords": [
     "console log",
     "console logger",
@@ -27,6 +26,6 @@
   "author": "deemdev",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.4.0"
+    "chalk": "^4.1.0"
   }
 }

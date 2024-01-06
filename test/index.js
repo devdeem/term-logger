@@ -24,14 +24,13 @@ Logger.log('BASIC LOG event test');
 
 console.log('---------------------- TEXT STYLES ----------------------');
 TextStyles.bold('BOLD');
+TextStyles.dim('DIM');
 TextStyles.italic('ITALIC');
 TextStyles.underline('UNDERLINE');
 TextStyles.inverse('INVERSE');
+TextStyles.hidden('HIDDEN');
 TextStyles.strikethrough('STRIKETHROUGH');
-TextStyles.rainbow('RAINBOW');
-TextStyles.america('AMERICA');
-TextStyles.trap('TRAP');
-TextStyles.random('RANDOM');
+TextStyles.visible('VISIBLE');
 
 console.log('---------------------- TEXT COLORS ----------------------');
 TextColors.red('RED');
@@ -42,7 +41,6 @@ TextColors.purple('PURPLE');
 TextColors.cyan('CYAN');
 TextColors.white('WHITE');
 TextColors.gray('GRAY');
-TextColors.grey('GREY');
 
 console.log('---------------------- BRIGHT COLORS ----------------------');
 BrightColors.brightRed('RED');

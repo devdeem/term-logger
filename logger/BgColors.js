@@ -1,36 +1,36 @@
 // COLORS PACKAGE
-const c = require('colors');
+const chalk = require('chalk');
 
 const bgRed = (data) => {
-  return console.log(`${`${data}`.bgRed}`);
+  return console.log(chalk.bgRed(data));
 };
 
 const bgGreen = (data) => {
-  return console.log(`${`${data}`.bgGreen}`);
+  return console.log(chalk.bgGreen(data));
 };
 
 const bgYellow = (data) => {
-  return console.log(`${`${data}`.bgYellow}`);
+  return console.log(chalk.bgYellow(data));
 };
 
 const bgBlue = (data) => {
-  return console.log(`${`${data}`.bgBlue}`);
+  return console.log(chalk.bgBlue(data));
 };
 
 const bgPurple = (data) => {
-  return console.log(`${`${data}`.bgMagenta}`);
+  return console.log(chalk.bgMagenta(data));
 };
 
 const bgCyan = (data) => {
-  return console.log(`${`${data}`.bgCyan}`);
+  return console.log(chalk.bgCyan(data));
 };
 
 const bgWhite = (data) => {
-  return console.log(`${`${data}`.bgWhite}`);
+  return console.log(chalk.bgWhite(data));
 };
 
 const bgGrey = (data) => {
-  return console.log(`${`${data}`.bgGrey}`);
+  return console.log(chalk.bgGrey(data));
 };
 
 module.exports = {

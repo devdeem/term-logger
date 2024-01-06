@@ -88,7 +88,6 @@ Logger.success('...');
 - `cyan`
 - `white`
 - `gray`
-- `grey`
 - `brightRed`
 - `brightGreen`
 - `brightYellow`
@@ -132,14 +131,13 @@ BgColors.bgRed('...');
   <br />
 
 - `bold`
+- `dim`
 - `italic`
 - `underline`
 - `inverse`
+- `hidden`
 - `strikethrough`
-- `rainbow`
-- `america`
-- `trap`
-- `random`
+- `visible`
 </details>
 
 <br />
@@ -159,6 +157,7 @@ TextStyles.underline('...');
 - [Nero Bot](https://nerobot.eu)
 - [Note Bot](https://github.com/lassejlv/note-bot)
 - [Movie Swiper](https://www.movieswiper.xyz/)
+- [Cosmo](https://cosmobot.app)
 
 Do you use a term-logger? Join our [Discord Server](https://discord.com/invite/UdKSrxBXyd) and let us know!
 
