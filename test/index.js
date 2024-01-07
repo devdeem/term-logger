@@ -4,7 +4,7 @@ console.log('---------------------- LOGGER ----------------------');
 Logger.error('ERROR event test');
 Logger.success('SUCCESS event test');
 Logger.warn('WARN event test');
-Logger.await('AWAIT event test');
+Logger.waiting('WAITING event test');
 Logger.complete('COMPLETE event test');
 Logger.debug('DEBUG event test');
 Logger.fatal('FATAL event test');

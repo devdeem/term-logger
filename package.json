@@ -1,6 +1,6 @@
 {
   "name": "term-logger",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A simple node logger with custom formatted console logs!",
   "main": "main.js",
   "repository": {

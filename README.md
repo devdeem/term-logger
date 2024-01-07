@@ -44,7 +44,7 @@ npm install term-logger@latest
 - `error`
 - `success`
 - `warn`
-- `await`
+- `waiting`
 - `complete`
 - `debug`
 - `fatal`

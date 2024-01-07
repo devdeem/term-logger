@@ -46,7 +46,7 @@ const warn = (data) => {
   );
 };
 
-const await = (data) => {
+const waiting = (data) => {
   return console.log(
     `${chalk.grey(`>`)}  ${chalk.underline.cyan(`WAITING`)}  ${chalk.grey(
       `[${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? 'O' + minutes : minutes}:${
@@ -205,7 +205,7 @@ module.exports = {
   critical,
   success,
   warn,
-  await,
+  waiting,
   complete,
   debug,
   fatal,
