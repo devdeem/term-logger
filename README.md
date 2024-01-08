@@ -179,12 +179,19 @@ BgColors.blue("...");
 // and 6 more colors...
 ```
 
-<h2>Contributors</h2>
+<h2 align="left">Core Contributors</h2>
 <div align="left">
   <a href="https://samculo.com">
-    <img src="https://cdn.discordapp.com/avatars/482504115189186570/776054e55a0dec97a95fd69cf2151105.png?size=1024" alt="Samculo" width="100" height="100" style="border-radius: 50%">
+    <img src="https://cdn.discordapp.com/avatars/482504115189186570/776054e55a0dec97a95fd69cf2151105.png?size=1024" alt="Samculo" width="100" height="100">
   </a>
-  <br>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://hegy.xyz">
+    <img src="https://cdn.discordapp.com/avatars/979103930309046323/cb2239aab132d08472d1b6bb0fc503f0.png?size=1024" alt="Hegy" width="100" height="100">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://deemdev.xyz">
+    <img src="https://cdn.discordapp.com/avatars/482504115189186570/776054e55a0dec97a95fd69cf2151105.png?size=1024" alt="Samculo" width="100" height="100">
+  </a>
 </div>
 
 <h2>Projects that use term-logger</h2>
