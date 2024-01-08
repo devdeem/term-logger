@@ -1,8 +1,25 @@
 {
   "name": "term-logger",
-  "version": "1.2.7",
-  "description": "A simple node logger with custom formatted console logs!",
-  "main": "main.js",
+  "version": "1.2.8",
+  "description": "A simple & fast logger for better console formatted output!",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:check": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .ts ."
+  },
+  "keywords": [
+    "console",
+    "term-logger",
+    "discord logger",
+    "chalk",
+    "logger"
+  ],
+  "author": "deemdev",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/devdeem/term-logger"
@@ -10,22 +27,21 @@
   "bugs": {
     "url": "https://github.com/devdeem/term-logger/issues"
   },
-  "homepage": "https://support.roblybot.xyz",
-  "keywords": [
-    "console log",
-    "console logger",
-    "terminal log",
-    "terminal logger",
-    "term-logger",
-    "discord-logger",
-    "discord-log",
-    "discord-console",
-    "discord-console-log",
-    "colors"
-  ],
-  "author": "deemdev",
-  "license": "MIT",
+  "homepage": "https://discord.com/invite/UdKSrxBXyd",
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.7",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "npm-check-updates": "^16.14.12",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }

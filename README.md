@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">TERM LOGGER</h1>
-<p align="center">A simple node logger with custom formatted console logs!</p>
+<p align="center">A simple & fast logger for better console formatted output!</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/term-logger">
@@ -60,20 +60,19 @@ npm install term-logger@latest
 - `database`
 - `shard`
 - `cluster`
-- `log`
 </details>
 
 <br />
 
 ```js
-const { Logger } = require('term-logger');
+const { Logger } = require("term-logger");
 
-Logger.error(new Error('...'));
-Logger.success('...');
-// and 18 more logs...
+Logger.error(new Error("..."));
+Logger.success("...");
+// and 17 more logs...
 ```
 
-<h4>Colors Options</h4>
+<h4>TextColors Options</h4>
 
 <details>
   <summary>View all of the available colors.</summary>
@@ -88,39 +87,16 @@ Logger.success('...');
 - `cyan`
 - `white`
 - `gray`
-- `brightRed`
-- `brightGreen`
-- `brightYellow`
-- `brightBlue`
-- `brightPurple`
-- `brightCyan`
-- `brightWhite`
-- `bgRed`
-- `bgGreen`
-- `bgYellow`
-- `bgBlue`
-- `bgPurple`
-- `bgCyan`
-- `bgWhite`
-- `bgGrey`
 </details>
 
 <br />
 
 ```js
-const { TextColors, BrightColors, BgColors } = require('term-logger');
+const { TextColors } = require("term-logger");
 
-TextColors.red('...');
-TextColors.blue('...');
-// and 7 more colors...
-
-BrightColors.brightWhite('...');
-BrightColors.brightYellow('...');
-// and 5 more bright colors...
-
-BgColors.bgGreen('...');
-BgColors.bgRed('...');
-// and 6 more background colors...
+TextColors.red("...");
+TextColors.blue("...");
+// and 6 more colors...
 ```
 
 <h4>TextStyles Options</h4>
@@ -143,11 +119,64 @@ BgColors.bgRed('...');
 <br />
 
 ```js
-const { TextStyles } = require('term-logger');
+const { TextStyles } = require("term-logger");
 
-TextStyles.italic('...');
-TextStyles.underline('...');
+TextStyles.italic("...");
+TextStyles.underline("...");
 // and 7 more text styles...
+```
+
+<h4>BgColors Options</h4>
+
+<details>
+  <summary>View all of the available options.</summary>
+
+  <br />
+
+- `red`
+- `green`
+- `yellow`
+- `blue`
+- `purple`
+- `cyan`
+- `white`
+- `gray`
+</details>
+
+<br />
+
+```js
+const { BgColors } = require("term-logger");
+
+BgColors.red("...");
+BgColors.blue("...");
+// and 6 more colors...
+```
+
+<h4>BrightColors Options</h4>
+
+<details>
+  <summary>View all of the available colors.</summary>
+
+  <br />
+
+- `red`
+- `green`
+- `yellow`
+- `blue`
+- `purple`
+- `cyan`
+- `white`
+</details>
+
+<br />
+
+```js
+const { BgColors } = require("term-logger");
+
+BgColors.red("...");
+BgColors.blue("...");
+// and 6 more colors...
 ```
 
 <h2>Projects that use term-logger</h2>

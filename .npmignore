@@ -1,3 +1,10 @@
+# Dependency directories
 node_modules/
-test/
+
+# package lock files
 package-lock.json
+
+# useless files
+test/
+src/
+media/
