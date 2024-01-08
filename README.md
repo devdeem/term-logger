@@ -179,6 +179,14 @@ BgColors.blue("...");
 // and 6 more colors...
 ```
 
+<h2>Contributors</h2>
+<div align="left">
+  <a href="https://samculo.com">
+    <img src="https://cdn.discordapp.com/avatars/482504115189186570/776054e55a0dec97a95fd69cf2151105.png?size=1024" alt="Samculo" width="100" height="100" style="border-radius: 50%">
+  </a>
+  <br>
+</div>
+
 <h2>Projects that use term-logger</h2>
 <p>Some notable projects that use <b>term-logger</b> include:</p>
 
