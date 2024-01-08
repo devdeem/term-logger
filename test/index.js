@@ -1,4 +1,4 @@
-const { BgColors, BrightColors, Logger, TextColors, TextStyles } = require("../dist");
+const { BgColors, BrightColors, Logger, TextColors, TextStyles } = require("../dist"); // require('term-logger');
 
 console.log("---------------------- LOGGER ----------------------");
 Logger.cluster("CLUSTER event test");
