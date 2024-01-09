@@ -180,19 +180,10 @@ BgColors.blue("...");
 ```
 
 <h2 align="left">Core Contributors</h2>
-<div align="left">
-  <a href="https://samculo.com">
-    <img src="https://cdn.discordapp.com/avatars/482504115189186570/776054e55a0dec97a95fd69cf2151105.png?size=1024" alt="Samculo" width="100" height="100">
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://hegy.xyz">
-    <img src="https://cdn.discordapp.com/avatars/979103930309046323/cb2239aab132d08472d1b6bb0fc503f0.png?size=1024" alt="Hegy" width="100" height="100">
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://deemdev.xyz">
-    <img src="https://cdn.discordapp.com/avatars/482504115189186570/776054e55a0dec97a95fd69cf2151105.png?size=1024" alt="Samculo" width="100" height="100">
-  </a>
-</div>
+
+[![DEEM](https://avatars.githubusercontent.com/u/91419390?s=100&u=8fc8e4d78fb9a0b4724e10d0df346eb89cd231c4&v=3)](https://github.com/devdeem) | [![Samculo](https://avatars.githubusercontent.com/u/74377339?v=3&s=100)](https://github.com/samculo) | [![Hegy](https://avatars.githubusercontent.com/u/45619085?v=3&s=100)](https://github.com/hegyok)
+---|---|---
+[deemdev](https://github.com/devdeem) | [samculo](https://github.com/samculo) | [hegyok](https://github.com/hegyok)
 
 <h2>Projects that use term-logger</h2>
 <p>Some notable projects that use <b>term-logger</b> include:</p>
