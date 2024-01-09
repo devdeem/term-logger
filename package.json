@@ -1,6 +1,6 @@
 {
   "name": "term-logger",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "A simple & fast logger for better console formatted output!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
