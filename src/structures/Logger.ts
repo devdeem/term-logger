@@ -1,6 +1,13 @@
+/**
+ * Logger module for logging messages with different types and colors.
+ */
+
 import { getCurrentTime } from "../utils/getCurrentTime";
 import chalk from "chalk";
 
+/**
+ * Available log types and their corresponding colors.
+ */
 const LOGS = {
   cluster: "blue",
   command: "cyan",
@@ -23,6 +30,12 @@ const LOGS = {
   watch: "yellow",
 } as const;
 
+/**
+ * Template function for logging messages with the specified type and color.
+ * @param message - The message to be logged.
+ * @param type - The type of the log message.
+ * @param color - The color of the log message.
+ */
 const template = (message: string, type: keyof typeof LOGS, color: (typeof LOGS)[keyof typeof LOGS]) =>
   console.log(
     [
@@ -34,6 +47,9 @@ const template = (message: string, type: keyof typeof LOGS, color: (typeof LOGS)
     ].join("\xa0".repeat(2)),
   );
 
+/**
+ * Logger object that contains logging functions for each log type.
+ */
 export const Logger = Object.fromEntries(
   Object.entries(LOGS).map(([key, value]) => [
     key,
