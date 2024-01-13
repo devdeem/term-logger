@@ -2,7 +2,6 @@
   <img alt="TermLogger-Banner" src="./media/Banner.png" />
 </div>
 
-<h1 align="center">TERM LOGGER</h1>
 <p align="center">A simple & fast logger for better console formatted output!</p>
 
 <p align="center">
@@ -22,12 +21,17 @@
 
 <h1>Getting Started</h1>
 <h2>Installation</h2>
-<ul>
-  <li>To install term-logger package simply run this command in cmd:</li>
-</ul>
+
+<h4>Using NPM:</h4>
 
 ```
-npm install term-logger@latest
+npm install term-logger
+```
+
+<h4>Using YARN:</h4>
+
+```
+yarn add term-logger
 ```
 
 <h2>Usage</h2>
@@ -37,7 +41,7 @@ npm install term-logger@latest
 </ul>
 
 <details>
-  <summary>View all of the available loggers.</summary>
+  <summary>View all of the available logger options.</summary>
 
   <br />
 
@@ -129,7 +133,7 @@ TextStyles.underline("...");
 <h4>BgColors Options</h4>
 
 <details>
-  <summary>View all of the available options.</summary>
+  <summary>View all of the available background options.</summary>
 
   <br />
 
@@ -156,7 +160,7 @@ BgColors.blue("...");
 <h4>BrightColors Options</h4>
 
 <details>
-  <summary>View all of the available colors.</summary>
+  <summary>View all of the available bright colors.</summary>
 
   <br />
 
@@ -181,20 +185,9 @@ BgColors.blue("...");
 
 <h2 align="left">Core Contributors</h2>
 
-[![DEEM](https://avatars.githubusercontent.com/u/91419390?s=100&u=8fc8e4d78fb9a0b4724e10d0df346eb89cd231c4&v=3)](https://github.com/devdeem) | [![Samculo](https://avatars.githubusercontent.com/u/74377339?v=3&s=100)](https://github.com/samculo) | [![Hegy](https://avatars.githubusercontent.com/u/45619085?v=3&s=100)](https://github.com/hegyok)
----|---|---
-[deemdev](https://github.com/devdeem) | [samculo](https://github.com/samculo) | [hegyok](https://github.com/hegyok)
-
-<h2>Projects that use term-logger</h2>
-<p>Some notable projects that use <b>term-logger</b> include:</p>
-
-- [Robly](https://roblybot.xyz)
-- [Nero Bot](https://nerobot.eu)
-- [Note Bot](https://github.com/lassejlv/note-bot)
-- [Movie Swiper](https://www.movieswiper.xyz/)
-- [Cosmo](https://cosmobot.app)
-
-Do you use a term-logger? Join our [Discord Server](https://discord.com/invite/UdKSrxBXyd) and let us know!
+| [![DEEM](https://avatars.githubusercontent.com/u/91419390?s=100&u=8fc8e4d78fb9a0b4724e10d0df346eb89cd231c4&v=3)](https://github.com/devdeem) | [![Samculo](https://avatars.githubusercontent.com/u/74377339?v=3&s=100)](https://github.com/samculo) | [![Hegy](https://avatars.githubusercontent.com/u/45619085?v=3&s=100)](https://github.com/hegyok) |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [deemdev](https://github.com/devdeem)                                                                                                        | [samculo](https://github.com/samculo)                                                                | [hegyok](https://github.com/hegyok)                                                              |
 
 <h2>Do you have any issues?</h2>
 <p>
