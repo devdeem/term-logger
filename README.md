@@ -176,10 +176,10 @@ BgColors.blue("...");
 <br />
 
 ```js
-const { BgColors } = require("term-logger");
+const { BrightColors } = require("term-logger");
 
-BgColors.red("...");
-BgColors.blue("...");
+BrightColors.red("...");
+BrightColors.blue("...");
 // and 6 more colors...
 ```
 
