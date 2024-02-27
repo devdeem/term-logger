@@ -183,12 +183,6 @@ BrightColors.blue("...");
 // and 6 more colors...
 ```
 
-<h2 align="left">Core Contributors</h2>
-
-| [![DEEM](https://avatars.githubusercontent.com/u/91419390?s=100&u=8fc8e4d78fb9a0b4724e10d0df346eb89cd231c4&v=3)](https://github.com/devdeem) | [![Samculo](https://avatars.githubusercontent.com/u/74377339?v=3&s=100)](https://github.com/samculo) | [![Hegy](https://avatars.githubusercontent.com/u/45619085?v=3&s=100)](https://github.com/hegyok) |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [deemdev](https://github.com/devdeem)                                                                                                        | [samculo](https://github.com/samculo)                                                                | [hegyok](https://github.com/hegyok)                                                              |
-
 <h2>Do you have any issues?</h2>
 <p>
   If you have any issues don't hesitate to report it via
